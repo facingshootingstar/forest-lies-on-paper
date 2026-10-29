@@ -5,5 +5,9 @@
   "peak_green_but_lost_rate": 0.6,
   "dry_month_rate": 0.0,
   "mean_rate_all_months": 0.2992942453854506,
-  "note": "Replace with Hansen GFC + MODIS NDVI for VN/SEA per README REAL_DATA"
+  "note": "Replace with Hansen GFC + MODIS NDVI for VN/SEA per README REAL_DATA",
+  "n_seeds": 10,
+  "peak_mean_10seeds": 0.6069346482948706,
+  "peak_std_10seeds": 0.0036191515966045623,
+  "mean_rate_mean_10seeds": 0.3039675395833829
 }
