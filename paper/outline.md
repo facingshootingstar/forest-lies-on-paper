@@ -33,3 +33,17 @@ Synthetic NDVI + loss mask; threshold τ; mismatch rate; month loop. Real path: 
 - Table 1: green-but-lost rates
 - Fig 1: NDVI | loss | mismatch panels
 - Table 2: by pseudo-month
+
+
+## Paper type & scope (q34 upgrade)
+Short conference paper: **reproducible audit protocol** (subtitle tag: Protocol & Synthetic Demonstration).
+
+*This paper presents a reproducible audit protocol demonstrated on synthetic/proxy data; a REAL_DATA path is documented for follow-on measurement, not claimed as completed observation.*
+
+**Limitations.** Synthetic/PROXY demonstration only; REAL_DATA path documented (README) but not run; contribution is an audit metric, not a first discovery; no journal-tier or indexing claim.
+
+## Camera-ready figure captions
+- Fig. 1 (`results/green_vs_loss.{pdf,svg,png}`): Synthetic raster, seed 7, month 8. (a) NDVI. (b) Loss mask: naturally cleared vs crop-replaced. (c) Loss pixels with NDVI ≥ τ (audit flag) vs non-green loss pixels.
+- Fig. 2 (`results/seasonal_mismatch.{pdf,svg,png}`): Monthly P(NDVI ≥ τ | loss) for τ ∈ {0.50…0.70}; τ = 0.6 main (black); shaded = dry months.
+
+Figures: 300 dpi PNG + vector PDF/SVG, ≥9 pt fonts, Okabe–Ito / viridis-family palettes; regenerate with `python src/make_figures.py` (reads frozen results/seeds, never rewrites CSV/JSON).

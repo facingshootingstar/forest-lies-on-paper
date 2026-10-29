@@ -2,10 +2,10 @@
 
 **Title:** Green Pixels, Missing Trees: When NDVI Outlives the Canopy
 
-**Subtitle:** Do not read greenness alone as forest survival
+**Subtitle:** Do not read greenness alone as forest survival — Protocol & Synthetic Demonstration
 
 **Abstract.**
-NDVI is still used as a shortcut for “forest still there,” yet pixels can stay green after canopy loss through crops, understory or seasonality. We quantify *green-but-lost*: the share of loss-mask pixels whose NDVI stays at or above a threshold τ. On a synthetic raster suite (τ=0.6, 1535 loss pixels) the green-but-lost rate peaks at **0.60** (first reached in month 4, held through month 8), falls to 0.00 in dry months, and averages 0.30 over the year; the peak is unchanged for τ between 0.5 and 0.7. Seasonal slices show when greenness lies hardest, and a simple mismatch rate turns a vegetation map into an audit flag. A path to real loss products (Hansen Global Forest Change) plus MODIS NDVI for Vietnam/SEA is documented but not run here. We do not claim that NDVI ≠ forest is new; we package the known mismatch as a seasonal, τ-swept audit rate. **Takeaway:** green on paper is not trees on the ground.
+NDVI is still used as a shortcut for “forest still there,” yet pixels can stay green after canopy loss through crops, understory or seasonality. We quantify *green-but-lost*: the share of loss-mask pixels whose NDVI stays at or above a threshold τ. On a synthetic raster suite (τ=0.6, 1535 loss pixels) the green-but-lost rate peaks at **0.60** (first reached in month 4, held through month 8), falls to 0.00 in dry months, and averages 0.30 over the year; the peak is unchanged for τ between 0.5 and 0.7. Seasonal slices show when greenness lies hardest, and a simple mismatch rate turns a vegetation map into an audit flag. A path to real loss products (Hansen Global Forest Change) plus MODIS NDVI for Vietnam/SEA is documented but not run here. We do not claim that NDVI ≠ forest is new; we package the known mismatch as a seasonal, τ-swept audit rate. **Takeaway:** green on paper is not trees on the ground. *This paper presents a reproducible audit protocol demonstrated on synthetic/proxy data; a REAL_DATA path is documented for follow-on measurement, not claimed as completed observation.*
 
 **Keywords:** NDVI, deforestation, remote sensing validation, seasonality, greenwashing
 
