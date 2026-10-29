@@ -1,0 +1,9 @@
+{
+  "mode": "SYNTHETIC_rasters",
+  "ndvi_threshold": 0.6,
+  "peak_month": 4,
+  "peak_green_but_lost_rate": 0.6,
+  "dry_month_rate": 0.0,
+  "mean_rate_all_months": 0.2992942453854506,
+  "note": "Replace with Hansen GFC + MODIS NDVI for VN/SEA per README REAL_DATA"
+}
