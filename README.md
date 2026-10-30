@@ -42,3 +42,13 @@ Conference short paper presenting a **reproducible audit protocol**. *This paper
 
 ## REAL_DATA slice recipe (exact, not yet run)
 One region slice: Hansen GFC v1.11 `lossyear` + `treecover2000` tile 30N_100E (or Earth Engine `UMD/hansen/global_forest_change_2023_v1_11`) clipped to a Central Highlands VN bbox; MODIS MOD13Q1 NDVI (250 m, 16-day) for the year after loss; reproject to 250 m; green-but-lost = (NDVI ≥ τ) ∧ (lossyear > 0) per month; same τ sweep; manifest in `results/`.
+
+## v4 extensions (`src/run_extended.py`)
+
+Run `python src/run_extended.py`. At rho=1, no noise and 30 m it reproduces `results/multi_seed.csv` (max |diff| 5.6e-17).
+
+- **Recovery control.** The replanted share rho of belt loss is varied in {0, 0.25, 0.5, 0.75, 1}. At 30 m the peak green-but-lost rate equals the true replanted share in all 50 runs (slope 1.000, max error 0). rho=0 (negative control) gives 0. At 240 m with noise sd 0.05, rho=0 still reads 0.268 (mixed-pixel false positive).
+- **Noise x pixel size** at the locked design (true share 0.607): 120 m gives a peak of 0.645, and 240 m gives 0.653 to 0.660. The dry-month rate moves from 0 to about 0.29, and natural loss is read as green at up to 0.20.
+- **Composite choice** (10 seeds): max and wet composites give 0.607, median gives 0.308, and dry gives 0.000.
+
+Outputs: `results/ext_recovery*.csv`, `ext_stress*.csv`, `ext_composites.csv`, `ext_summary.json`, `ext_recovery.{png,pdf}`.

@@ -1,0 +1,53 @@
+{
+  "mode": "SYNTHETIC_rasters_v4_extensions",
+  "tau": 0.6,
+  "seeds": [
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "rho_grid": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "recovery_native": {
+    "slope": 1.0000000000000002,
+    "intercept": 5.903211346787722e-17,
+    "max_abs_err": 0.0,
+    "rho0_peak_max": 0.0
+  },
+  "recovery_240m_noise05": {
+    "slope": 0.7468103679736503,
+    "intercept": 0.22860367521529526,
+    "max_abs_err": 0.28469055374592833,
+    "rho0_peak_mean": 0.2676566739047424
+  },
+  "composites_baseline": {
+    "G_max_composite": {
+      "mean": 0.6069346482948706,
+      "sd": 0.0036191515966045623
+    },
+    "G_median_composite": {
+      "mean": 0.308320477184904,
+      "sd": 0.007267317716471747
+    },
+    "G_wet_composite": {
+      "mean": 0.6069346482948706,
+      "sd": 0.0036191515966045623
+    },
+    "G_dry_composite": {
+      "mean": 0.0,
+      "sd": 0.0
+    }
+  }
+}
